@@ -1,0 +1,35 @@
+body,
+ul,
+li,
+p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: Arial;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    /* A propriedade CSS flex-wrap define se os item flexiveis são forcados a ficarem na mesma linha ou se podem ser quebrados em varias linhas. Se o argumento for valido, ele define a direção em que as linhas são empilhadas. */
+}
+
+li {
+    height: 40vh;
+    flex-grow: 1;
+    /*A propriedade flex do CSS, define como um item será posicionado para no espaçp disponivel dentro de seu contador. */
+}
+
+li:last-child {
+    flex-grow: 10;
+}
+
+img {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    /* A propriedade CSS object-fit especifica com o conteudo de um alemento substituido deve ser ajustado a caixa estabelecida pela altura e largura usada. */
+    vertical-align: bottom;
+}
+
